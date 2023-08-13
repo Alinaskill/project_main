@@ -1,0 +1,75 @@
+CREATE DATABASE chzsa_cars;
+
+\c chzsa_cars
+
+CREATE TABLE technics (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+CREATE TABLE engine_models (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+CREATE TABLE transmission_models (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+CREATE TABLE front_axle_models (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+CREATE TABLE rear_axle_models (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+CREATE TABLE maintenance_types (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+CREATE TABLE complaint_types (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+CREATE TABLE restoration_methods (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
+
+INSERT INTO technics (name, description) VALUES ('Excavator', 'A heavy construction machine used to dig or move large objects');
+INSERT INTO technics (name, description) VALUES ('Bulldozer', 'A crawler equipped with a substantial metal plate used to push large quantities of soil, sand, rubble, etc.');
+
+INSERT INTO engine_models (name, description) VALUES ('Model 1', 'Description 1');
+INSERT INTO engine_models (name, description) VALUES ('Model 2', 'Description 2');
+
+INSERT INTO transmission_models (name, description) VALUES ('Model 1', 'Description 1');
+INSERT INTO transmission_models (name, description) VALUES ('Model 2', 'Description 2');
+
+INSERT INTO front_axle_models (name, description) VALUES ('Model 1', 'Description 1');
+INSERT INTO front_axle_models (name, description) VALUES ('Model 2', 'Description 2');
+
+INSERT INTO rear_axle_models (name, description) VALUES ('Model 1', 'Description 1');
+INSERT INTO rear_axle_models (name, description) VALUES ('Model 2', 'Description 2');
+
+INSERT INTO maintenance_types (name, description) VALUES ('Type 1', 'Description 1');
+INSERT INTO maintenance_types (name, description) VALUES ('Type 2', 'Description 2');
+
+INSERT INTO complaint_types (name, description) VALUES ('Type 1', 'Description 1');
+INSERT INTO complaint_types (name, description) VALUES ('Type 2', 'Description 2');
+
+INSERT INTO restoration_methods (name, description) VALUES ('Method 1', 'Description 1');
+INSERT INTO restoration_methods (name, description) VALUES ('Method 2', 'Description 2');
